@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Glow Beauty</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <div class="logo">🌸 Glow Beauty</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#products">Products</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="cart">🛒 <span id="cart-count">0</span></div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Discover Your Glow</h1>
+    <p>Luxury skincare and cosmetics for your natural beauty.</p>
+    <button onclick="scrollToProducts()">Shop Now</button>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products">
+    <h2>Our Bestsellers</h2>
+    <div class="product-grid">
+      <div class="product">
+        <input type="checkbox" class="product-check" onchange="toggleProduct(this)">
+        <img src="https://images.unsplash.com/photo-1618354691373-d851c1f47b05?w=400" alt="Face Cream">
+        <h3>Radiance Face Cream</h3>
+        <p>$29.99</p>
+        <button onclick="addToCart()">Add to Cart</button>
+      </div>
+      <div class="product">
+        <input type="checkbox" class="product-check" onchange="toggleProduct(this)">
+        <img src="https://images.unsplash.com/photo-1580910051074-c4f7b4b2f9f9?w=400" alt="Lipstick">
+        <h3>Velvet Matte Lipstick</h3>
+        <p>$19.99</p>
+        <button onclick="addToCart()">Add to Cart</button>
+      </div>
+      <div class="product">
+        <input type="checkbox" class="product-check" onchange="toggleProduct(this)">
+        <img src="https://images.unsplash.com/photo-1618354691251-9d15e5a0f28b?w=400" alt="Perfume">
+        <h3>Blossom Eau de Parfum</h3>
+        <p>$49.99</p>
+        <button onclick="addToCart()">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>At Glow Beauty, we believe in enhancing your natural radiance with premium quality skincare and cosmetics. Our products are cruelty-free, eco-friendly, and made with love.</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: support@glowbeauty.com</p>
+    <p>Instagram: @glowbeauty</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Glow Beauty. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
